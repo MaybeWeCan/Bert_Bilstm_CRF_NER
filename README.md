@@ -2,9 +2,9 @@
 
 
 
-> **简介：**本代码是Bert-Bilstm-CRF-Ner的一个简单实现，主要架构基于Estimator
+> **简介**本代码是Bert-Bilstm-CRF-Ner的一个简单实现，主要架构基于Estimator
 >
-> **环境：**tensorflow 1.14
+> **环境**tensorflow 1.14
 
 
 
@@ -161,7 +161,7 @@ metrics = {
 
 （1）test只关于实体的F1计算
 
-​			这个代码参考的github只是实现了对于预测结果生成的文件，做关于实体的F1_score，自己在test添加时，加不进去，原因是Estimator将构图和sess分开，在用estimator时只需要考虑sess,但是这样个人无法在eval代码中得到数据（不清楚如何触发data.get_nextbatch这个事件），各种尝试都报错，暂时没有解决。
+      这个代码参考的github只是实现了对于预测结果生成的文件，做关于实体的F1_score，自己在test添加时，加不进去，原因是Estimator将构图和sess分开，在用estimator时只需要考虑图于tensor的value取不出来，也不清楚如何触发data.get_nextbatch这个事件，因此无法在eval代码中循环得到数据，各种尝试都报错，暂时没有解决。
 
 
 
