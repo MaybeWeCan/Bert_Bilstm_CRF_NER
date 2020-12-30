@@ -1,0 +1,1652 @@
+2020-12-28 11:18:56 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 11:18:56 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:617: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 11:19:00 | ***** Running training *****
+2020-12-28 11:19:00 |   Num examples = 47421
+2020-12-28 11:19:00 |   Batch size = 1
+2020-12-28 11:19:00 |   Num steps = 237105
+2020-12-28 11:19:01 | ***** Running evaluation *****
+2020-12-28 11:19:01 |   Num examples = 7866
+2020-12-28 11:19:01 |   Batch size = 1
+2020-12-28 11:19:01 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002327050B240>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 11:19:01 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:320: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 11:19:01 | Writing example 0 of 47421
+2020-12-28 11:19:01 | *** Example ***
+2020-12-28 11:19:01 | guid: train-0
+2020-12-28 11:19:01 | tokens: 当 希 望 工 程 救 助 的 百 万 儿 童 成 长 起 来 ， 科 教 兴 国 蔚 然 成 风 时 ， 今 天 有 收 藏 价 值 的 书 你 没 买 ， 明 日 就 叫 你 悔 不 当 初 ！
+2020-12-28 11:19:01 | input_ids: 101 2496 2361 3307 2339 4923 3131 1221 4638 4636 674 1036 4997 2768 7270 6629 3341 8024 4906 3136 1069 1744 5917 4197 2768 7599 3198 8024 791 1921 3300 3119 5966 817 966 4638 741 872 3766 743 8024 3209 3189 2218 1373 872 2637 679 2496 1159 8013 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | *** Example ***
+2020-12-28 11:19:01 | guid: train-1
+2020-12-28 11:19:01 | tokens: 藏 书 本 来 就 是 所 有 传 统 收 藏 门 类 中 的 第 一 大 户 ， 只 是 我 们 结 束 温 饱 的 时 间 太 短 而 已 。
+2020-12-28 11:19:01 | input_ids: 101 5966 741 3315 3341 2218 3221 2792 3300 837 5320 3119 5966 7305 5102 704 4638 5018 671 1920 2787 8024 1372 3221 2769 812 5310 3338 3946 7653 4638 3198 7313 1922 4764 5445 2347 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | *** Example ***
+2020-12-28 11:19:01 | guid: train-2
+2020-12-28 11:19:01 | tokens: 因 有 关 日 寇 在 京 掠 夺 文 物 详 情 ， 藏 界 较 为 重 视 ， 也 是 我 们 收 藏 北 京 史 料 中 的 要 件 之 一 。
+2020-12-28 11:19:01 | input_ids: 101 1728 3300 1068 3189 2167 1762 776 2966 1932 3152 4289 6422 2658 8024 5966 4518 6772 711 7028 6228 8024 738 3221 2769 812 3119 5966 1266 776 1380 3160 704 4638 6206 816 722 671 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | label_ids: 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | *** Example ***
+2020-12-28 11:19:01 | guid: train-3
+2020-12-28 11:19:01 | tokens: 我 们 藏 有 一 册 1 9 4 5 年 6 月 油 印 的 《 北 京 文 物 保 存 保 管 状 态 之 调 查 报 告 》 ， 调 查 范 围 涉 及 故 宫 、 历 博 、 古 研 所 、 北 大 清 华 图 书 馆 、 北 图 、 日 伪 资 料 库 等 二 十 几 家 ， 言 及 文 物 二 十 万 件 以 上 ， 洋 洋 三 万 余 言 ， 是 珍 贵 的 北 京 史 料 。
+2020-12-28 11:19:01 | input_ids: 101 2769 812 5966 3300 671 1085 122 130 125 126 2399 127 3299 3779 1313 4638 517 1266 776 3152 4289 924 2100 924 5052 4307 2578 722 6444 3389 2845 1440 518 8024 6444 3389 5745 1741 3868 1350 3125 2151 510 1325 1300 510 1367 4777 2792 510 1266 1920 3926 1290 1745 741 7667 510 1266 1745 510 3189 841 6598 3160 2417 5023 753 1282 1126 2157 8024 6241 1350 3152 4289 753 1282 674 816 809 677 8024 3817 3817 676 674 865 6241 8024 3221 4397 6586 4638 1266 776 1380 3160 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 2 1 0 4 3 3 0 2 1 1 1 1 1 1 0 2 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | *** Example ***
+2020-12-28 11:19:01 | guid: train-4
+2020-12-28 11:19:01 | tokens: 以 家 乡 的 历 史 文 献 、 特 定 历 史 时 期 书 刊 、 某 一 名 家 或 名 著 的 多 种 出 版 物 为 专 题 ， 注 意 精 品 、 非 卖 品 、 纪 念 品 ， 集 成 系 列 ， 那 收 藏 的 过 程 就 已 经 够 您 玩 味 无 穷 了 。
+2020-12-28 11:19:01 | input_ids: 101 809 2157 740 4638 1325 1380 3152 4346 510 4294 2137 1325 1380 3198 3309 741 1149 510 3378 671 1399 2157 2772 1399 5865 4638 1914 4905 1139 4276 4289 711 683 7579 8024 3800 2692 5125 1501 510 7478 1297 1501 510 5279 2573 1501 8024 7415 2768 5143 1154 8024 6929 3119 5966 4638 6814 4923 2218 2347 5307 1916 2644 4381 1456 3187 4956 749 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:01 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:04 | Writing example 5000 of 47421
+2020-12-28 11:19:07 | Writing example 10000 of 47421
+2020-12-28 11:19:11 | Writing example 15000 of 47421
+2020-12-28 11:19:14 | Writing example 20000 of 47421
+2020-12-28 11:19:18 | Writing example 25000 of 47421
+2020-12-28 11:19:21 | Writing example 30000 of 47421
+2020-12-28 11:19:25 | Writing example 35000 of 47421
+2020-12-28 11:19:28 | Writing example 40000 of 47421
+2020-12-28 11:19:32 | Writing example 45000 of 47421
+2020-12-28 11:19:34 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 11:19:34 | Writing example 0 of 7866
+2020-12-28 11:19:34 | *** Example ***
+2020-12-28 11:19:34 | guid: dev-0
+2020-12-28 11:19:34 | tokens: 就 从 这 一 点 而 言 ， 学 习 画 画 对 孩 子 的 早 期 智 力 开 发 和 基 本 能 力 的 全 面 提 高 是 非 常 有 益 而 有 效 的 。
+2020-12-28 11:19:34 | input_ids: 101 2218 794 6821 671 4157 5445 6241 8024 2110 739 4514 4514 2190 2111 2094 4638 3193 3309 3255 1213 2458 1355 1469 1825 3315 5543 1213 4638 1059 7481 2990 7770 3221 7478 2382 3300 4660 5445 3300 3126 4638 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | *** Example ***
+2020-12-28 11:19:34 | guid: dev-1
+2020-12-28 11:19:34 | tokens: 然 而 这 并 不 是 素 质 教 育 ， 素 质 教 育 不 是 形 式 ， 而 是 方 法 ， 是 可 以 全 面 提 高 孩 子 基 本 能 力 （ 或 者 叫 基 本 素 质 ） 的 教 育 方 法 。
+2020-12-28 11:19:34 | input_ids: 101 4197 5445 6821 2400 679 3221 5162 6574 3136 5509 8024 5162 6574 3136 5509 679 3221 2501 2466 8024 5445 3221 3175 3791 8024 3221 1377 809 1059 7481 2990 7770 2111 2094 1825 3315 5543 1213 8020 2772 5442 1373 1825 3315 5162 6574 8021 4638 3136 5509 3175 3791 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | *** Example ***
+2020-12-28 11:19:34 | guid: dev-2
+2020-12-28 11:19:34 | tokens: 很 多 家 长 也 愿 意 自 己 的 孩 子 学 习 画 画 ， 希 望 孩 子 画 出 漂 亮 的 画 ， 更 有 许 多 家 长 希 望 自 己 的 孩 子 能 通 过 从 小 学 习 画 画 长 大 后 成 为 专 业 美 术 工 作 者 。
+2020-12-28 11:19:34 | input_ids: 101 2523 1914 2157 7270 738 2703 2692 5632 2346 4638 2111 2094 2110 739 4514 4514 8024 2361 3307 2111 2094 4514 1139 4023 778 4638 4514 8024 3291 3300 6387 1914 2157 7270 2361 3307 5632 2346 4638 2111 2094 5543 6858 6814 794 2207 2110 739 4514 4514 7270 1920 1400 2768 711 683 689 5401 3318 2339 868 5442 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | *** Example ***
+2020-12-28 11:19:34 | guid: dev-3
+2020-12-28 11:19:34 | tokens: 现 在 ， 素 质 教 育 是 一 个 时 髦 的 话 题 ， 而 是 否 让 孩 子 学 习 画 画 成 了 素 质 教 育 的 一 个 标 准 。
+2020-12-28 11:19:34 | input_ids: 101 4385 1762 8024 5162 6574 3136 5509 3221 671 702 3198 7771 4638 6413 7579 8024 5445 3221 1415 6375 2111 2094 2110 739 4514 4514 2768 749 5162 6574 3136 5509 4638 671 702 3403 1114 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | *** Example ***
+2020-12-28 11:19:34 | guid: dev-4
+2020-12-28 11:19:34 | tokens: 所 以 ， 千 万 不 要 怕 孩 子 画 得 不 好 看 ， 而 不 让 他 们 自 由 自 在 地 去 画 自 己 所 见 所 闻 的 画 。
+2020-12-28 11:19:34 | input_ids: 101 2792 809 8024 1283 674 679 6206 2586 2111 2094 4514 2533 679 1962 4692 8024 5445 679 6375 800 812 5632 4507 5632 1762 1765 1343 4514 5632 2346 2792 6224 2792 7319 4638 4514 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:34 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 11:19:37 | Writing example 5000 of 7866
+2020-12-28 11:19:39 | Not using Distribute Coordinator.
+2020-12-28 11:19:39 | Running training and evaluation locally (non-distributed).
+2020-12-28 11:19:39 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 11:19:39 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 11:19:39 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 11:19:39 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 11:19:39 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 11:19:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 11:19:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 11:19:40 | Calling model_fn.
+2020-12-28 11:19:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 11:19:40 | *** Features ***
+2020-12-28 11:19:40 |   name = input_ids, shape = (1, 150)
+2020-12-28 11:19:40 |   name = input_mask, shape = (1, 150)
+2020-12-28 11:19:40 |   name = label_ids, shape = (1, 150)
+2020-12-28 11:19:40 |   name = segment_ids, shape = (1, 150)
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 11:19:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 11:19:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 11:19:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 11:19:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 11:19:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 11:19:40 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 11:19:41 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 11:19:41 | Done calling model_fn.
+2020-12-28 11:19:41 | Create CheckpointSaverHook.
+2020-12-28 11:19:41 | Graph was finalized.
+2020-12-28 11:19:42 | Running local_init_op.
+2020-12-28 11:19:42 | Done running local_init_op.
+2020-12-28 11:19:43 | Saving checkpoints for 0 into ./output/ckpt\model.ckpt.
+2020-12-28 11:19:47 | loss = 124.71864, step = 1
+2020-12-28 11:19:47 | train_loss = 124.71864
+2020-12-28 11:19:48 | It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 2 vs previous value: 2. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+2020-12-28 11:19:48 | Saving checkpoints for 5 into ./output/ckpt\model.ckpt.
+2020-12-28 11:19:51 | Calling model_fn.
+2020-12-28 11:19:51 | *** Features ***
+2020-12-28 11:19:51 |   name = input_ids, shape = (?, 150)
+2020-12-28 11:19:51 |   name = input_mask, shape = (?, 150)
+2020-12-28 11:19:51 |   name = label_ids, shape = (?, 150)
+2020-12-28 11:19:51 |   name = segment_ids, shape = (?, 150)
+2020-12-28 11:19:51 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:513: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-28 11:23:53 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 11:23:53 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:616: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 11:23:57 | ***** Running training *****
+2020-12-28 11:23:57 |   Num examples = 47421
+2020-12-28 11:23:57 |   Batch size = 1
+2020-12-28 11:23:57 |   Num steps = 237105
+2020-12-28 11:23:58 | ***** Running evaluation *****
+2020-12-28 11:23:58 |   Num examples = 7866
+2020-12-28 11:23:58 |   Batch size = 1
+2020-12-28 11:23:58 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001C90812B240>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 11:23:58 | Not using Distribute Coordinator.
+2020-12-28 11:23:58 | Running training and evaluation locally (non-distributed).
+2020-12-28 11:23:58 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 11:23:58 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 11:23:58 | Calling model_fn.
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 11:23:58 | *** Features ***
+2020-12-28 11:23:58 |   name = input_ids, shape = (1, 150)
+2020-12-28 11:23:58 |   name = input_mask, shape = (1, 150)
+2020-12-28 11:23:58 |   name = label_ids, shape = (1, 150)
+2020-12-28 11:23:58 |   name = segment_ids, shape = (1, 150)
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 11:23:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 11:23:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 11:23:58 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 11:23:59 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 11:23:59 | Done calling model_fn.
+2020-12-28 11:23:59 | Create CheckpointSaverHook.
+2020-12-28 11:24:00 | Graph was finalized.
+2020-12-28 11:24:00 | Restoring parameters from ./output/ckpt\model.ckpt-5
+2020-12-28 11:24:00 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 11:24:00 | Running local_init_op.
+2020-12-28 11:24:00 | Done running local_init_op.
+2020-12-28 11:24:01 | Saving checkpoints for 5 into ./output/ckpt\model.ckpt.
+2020-12-28 11:24:05 | loss = 50.301876, step = 6
+2020-12-28 11:24:05 | train_loss = 50.301876
+2020-12-28 11:24:06 | Saving checkpoints for 10 into ./output/ckpt\model.ckpt.
+2020-12-28 11:24:09 | Calling model_fn.
+2020-12-28 11:24:09 | *** Features ***
+2020-12-28 11:24:09 |   name = input_ids, shape = (?, 150)
+2020-12-28 11:24:09 |   name = input_mask, shape = (?, 150)
+2020-12-28 11:24:09 |   name = label_ids, shape = (?, 150)
+2020-12-28 11:24:09 |   name = segment_ids, shape = (?, 150)
+2020-12-28 11:24:09 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:514: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-28 11:25:56 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 11:25:56 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:617: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 11:25:59 | ***** Running training *****
+2020-12-28 11:25:59 |   Num examples = 47421
+2020-12-28 11:25:59 |   Batch size = 1
+2020-12-28 11:25:59 |   Num steps = 237105
+2020-12-28 11:26:00 | ***** Running evaluation *****
+2020-12-28 11:26:00 |   Num examples = 7866
+2020-12-28 11:26:00 |   Batch size = 1
+2020-12-28 11:26:00 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000217D6F3B240>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 11:26:00 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 11:26:00 | Not using Distribute Coordinator.
+2020-12-28 11:26:00 | Running training and evaluation locally (non-distributed).
+2020-12-28 11:26:00 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 11:26:00 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 11:26:00 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 11:26:00 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 11:26:00 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 11:26:00 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 11:26:00 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 11:26:00 | Calling model_fn.
+2020-12-28 11:26:00 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 11:26:00 | *** Features ***
+2020-12-28 11:26:00 |   name = input_ids, shape = (1, 150)
+2020-12-28 11:26:00 |   name = input_mask, shape = (1, 150)
+2020-12-28 11:26:00 |   name = label_ids, shape = (1, 150)
+2020-12-28 11:26:00 |   name = segment_ids, shape = (1, 150)
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 11:26:00 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 11:26:00 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 11:26:01 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 11:26:01 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 11:26:01 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 11:26:01 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 11:26:01 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 11:26:01 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 11:26:02 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 11:26:02 | Done calling model_fn.
+2020-12-28 11:26:02 | Create CheckpointSaverHook.
+2020-12-28 11:26:02 | Graph was finalized.
+2020-12-28 11:26:02 | Restoring parameters from ./output/ckpt\model.ckpt-10
+2020-12-28 11:26:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 11:26:03 | Running local_init_op.
+2020-12-28 11:26:03 | Done running local_init_op.
+2020-12-28 11:26:04 | Saving checkpoints for 10 into ./output/ckpt\model.ckpt.
+2020-12-28 11:26:07 | loss = 120.64831, step = 11
+2020-12-28 11:26:07 | train_loss = 120.64831
+2020-12-28 11:26:09 | Saving checkpoints for 15 into ./output/ckpt\model.ckpt.
+2020-12-28 11:26:12 | Calling model_fn.
+2020-12-28 11:26:12 | *** Features ***
+2020-12-28 11:26:12 |   name = input_ids, shape = (?, 150)
+2020-12-28 11:26:12 |   name = input_mask, shape = (?, 150)
+2020-12-28 11:26:12 |   name = label_ids, shape = (?, 150)
+2020-12-28 11:26:12 |   name = segment_ids, shape = (?, 150)
+2020-12-28 11:41:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 11:41:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:618: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 11:41:20 | ***** Running training *****
+2020-12-28 11:41:20 |   Num examples = 47421
+2020-12-28 11:41:20 |   Batch size = 1
+2020-12-28 11:41:20 |   Num steps = 237105
+2020-12-28 11:41:21 | ***** Running evaluation *****
+2020-12-28 11:41:21 |   Num examples = 7866
+2020-12-28 11:41:21 |   Batch size = 1
+2020-12-28 11:41:21 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001DB7013C278>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 11:41:21 | Not using Distribute Coordinator.
+2020-12-28 11:41:21 | Running training and evaluation locally (non-distributed).
+2020-12-28 11:41:21 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 11:41:21 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 11:41:21 | Calling model_fn.
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 11:41:21 | *** Features ***
+2020-12-28 11:41:21 |   name = input_ids, shape = (1, 150)
+2020-12-28 11:41:21 |   name = input_mask, shape = (1, 150)
+2020-12-28 11:41:21 |   name = label_ids, shape = (1, 150)
+2020-12-28 11:41:21 |   name = segment_ids, shape = (1, 150)
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 11:41:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 11:41:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 11:41:21 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 11:41:22 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 11:41:22 | Done calling model_fn.
+2020-12-28 11:41:22 | Create CheckpointSaverHook.
+2020-12-28 11:41:23 | Graph was finalized.
+2020-12-28 11:41:23 | Restoring parameters from ./output/ckpt\model.ckpt-15
+2020-12-28 11:41:23 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 11:41:23 | Running local_init_op.
+2020-12-28 11:41:23 | Done running local_init_op.
+2020-12-28 11:41:24 | Saving checkpoints for 15 into ./output/ckpt\model.ckpt.
+2020-12-28 11:41:28 | loss = 92.00012, step = 16
+2020-12-28 11:41:28 | train_loss = 92.00012
+2020-12-28 11:41:29 | Saving checkpoints for 20 into ./output/ckpt\model.ckpt.
+2020-12-28 11:41:32 | Calling model_fn.
+2020-12-28 11:41:32 | *** Features ***
+2020-12-28 11:41:32 |   name = input_ids, shape = (?, 150)
+2020-12-28 11:41:32 |   name = input_mask, shape = (?, 150)
+2020-12-28 11:41:32 |   name = label_ids, shape = (?, 150)
+2020-12-28 11:41:32 |   name = segment_ids, shape = (?, 150)
+2020-12-28 11:41:33 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:515: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-28 13:59:11 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 13:59:11 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:618: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 13:59:15 | ***** Running training *****
+2020-12-28 13:59:15 |   Num examples = 47421
+2020-12-28 13:59:15 |   Batch size = 1
+2020-12-28 13:59:15 |   Num steps = 237105
+2020-12-28 13:59:16 | ***** Running evaluation *****
+2020-12-28 13:59:16 |   Num examples = 7866
+2020-12-28 13:59:16 |   Batch size = 1
+2020-12-28 13:59:16 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000015CAB1EC2B0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 13:59:16 | Not using Distribute Coordinator.
+2020-12-28 13:59:16 | Running training and evaluation locally (non-distributed).
+2020-12-28 13:59:16 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 13:59:16 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 13:59:16 | Calling model_fn.
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 13:59:16 | *** Features ***
+2020-12-28 13:59:16 |   name = input_ids, shape = (1, 150)
+2020-12-28 13:59:16 |   name = input_mask, shape = (1, 150)
+2020-12-28 13:59:16 |   name = label_ids, shape = (1, 150)
+2020-12-28 13:59:16 |   name = segment_ids, shape = (1, 150)
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 13:59:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 13:59:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 13:59:16 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 13:59:17 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 13:59:17 | Done calling model_fn.
+2020-12-28 13:59:17 | Create CheckpointSaverHook.
+2020-12-28 13:59:17 | Graph was finalized.
+2020-12-28 13:59:17 | Restoring parameters from ./output/ckpt\model.ckpt-20
+2020-12-28 13:59:18 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 13:59:18 | Running local_init_op.
+2020-12-28 13:59:18 | Done running local_init_op.
+2020-12-28 13:59:19 | Saving checkpoints for 20 into ./output/ckpt\model.ckpt.
+2020-12-28 13:59:22 | loss = 273.26538, step = 21
+2020-12-28 13:59:22 | train_loss = 273.26538
+2020-12-28 13:59:23 | It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 22 vs previous value: 22. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+2020-12-28 13:59:24 | Saving checkpoints for 25 into ./output/ckpt\model.ckpt.
+2020-12-28 13:59:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2020-12-28 13:59:27 | Calling model_fn.
+2020-12-28 13:59:27 | *** Features ***
+2020-12-28 13:59:27 |   name = input_ids, shape = (?, 150)
+2020-12-28 13:59:27 |   name = input_mask, shape = (?, 150)
+2020-12-28 13:59:27 |   name = label_ids, shape = (?, 150)
+2020-12-28 13:59:27 |   name = segment_ids, shape = (?, 150)
+2020-12-28 13:59:27 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:513: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-12-28 13:59:27 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:515: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-28 14:02:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 14:02:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:619: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 14:02:25 | ***** Running training *****
+2020-12-28 14:02:25 |   Num examples = 47421
+2020-12-28 14:02:25 |   Batch size = 1
+2020-12-28 14:02:25 |   Num steps = 237105
+2020-12-28 14:02:26 | ***** Running evaluation *****
+2020-12-28 14:02:26 |   Num examples = 7866
+2020-12-28 14:02:26 |   Batch size = 1
+2020-12-28 14:02:26 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000269C21CB240>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 14:02:26 | Not using Distribute Coordinator.
+2020-12-28 14:02:26 | Running training and evaluation locally (non-distributed).
+2020-12-28 14:02:26 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 14:02:26 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 14:02:26 | Calling model_fn.
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 14:02:26 | *** Features ***
+2020-12-28 14:02:26 |   name = input_ids, shape = (1, 150)
+2020-12-28 14:02:26 |   name = input_mask, shape = (1, 150)
+2020-12-28 14:02:26 |   name = label_ids, shape = (1, 150)
+2020-12-28 14:02:26 |   name = segment_ids, shape = (1, 150)
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 14:02:26 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 14:02:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 14:02:26 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 14:02:27 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 14:02:27 | Done calling model_fn.
+2020-12-28 14:02:27 | Create CheckpointSaverHook.
+2020-12-28 14:02:28 | Graph was finalized.
+2020-12-28 14:02:28 | Restoring parameters from ./output/ckpt\model.ckpt-25
+2020-12-28 14:02:28 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 14:02:28 | Running local_init_op.
+2020-12-28 14:02:28 | Done running local_init_op.
+2020-12-28 14:02:29 | Saving checkpoints for 25 into ./output/ckpt\model.ckpt.
+2020-12-28 14:02:33 | loss = 77.804184, step = 26
+2020-12-28 14:02:33 | train_loss = 77.804184
+2020-12-28 14:02:34 | It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 26 vs previous value: 26. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+2020-12-28 14:02:35 | Saving checkpoints for 30 into ./output/ckpt\model.ckpt.
+2020-12-28 14:02:37 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2020-12-28 14:02:37 | Calling model_fn.
+2020-12-28 14:02:37 | *** Features ***
+2020-12-28 14:02:37 |   name = input_ids, shape = (?, 150)
+2020-12-28 14:02:37 |   name = input_mask, shape = (?, 150)
+2020-12-28 14:02:37 |   name = label_ids, shape = (?, 150)
+2020-12-28 14:02:37 |   name = segment_ids, shape = (?, 150)
+2020-12-28 14:02:38 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:513: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-12-28 14:02:38 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:515: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-28 14:39:42 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 14:39:42 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:606: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 14:39:46 | ***** Running training *****
+2020-12-28 14:39:46 |   Num examples = 47421
+2020-12-28 14:39:46 |   Batch size = 1
+2020-12-28 14:39:46 |   Num steps = 237105
+2020-12-28 14:39:47 | ***** Running evaluation *****
+2020-12-28 14:39:47 |   Num examples = 7866
+2020-12-28 14:39:47 |   Batch size = 1
+2020-12-28 14:39:47 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002A6DD8EB1D0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 14:39:47 | Not using Distribute Coordinator.
+2020-12-28 14:39:47 | Running training and evaluation locally (non-distributed).
+2020-12-28 14:39:47 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 14:39:47 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 14:39:47 | Calling model_fn.
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 14:39:47 | *** Features ***
+2020-12-28 14:39:47 |   name = input_ids, shape = (1, 150)
+2020-12-28 14:39:47 |   name = input_mask, shape = (1, 150)
+2020-12-28 14:39:47 |   name = label_ids, shape = (1, 150)
+2020-12-28 14:39:47 |   name = segment_ids, shape = (1, 150)
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 14:39:47 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 14:39:47 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 14:39:47 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 14:39:48 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 14:39:48 | Done calling model_fn.
+2020-12-28 14:39:48 | Create CheckpointSaverHook.
+2020-12-28 14:39:49 | Graph was finalized.
+2020-12-28 14:39:49 | Restoring parameters from ./output/ckpt\model.ckpt-30
+2020-12-28 14:39:49 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 14:39:49 | Running local_init_op.
+2020-12-28 14:39:49 | Done running local_init_op.
+2020-12-28 14:39:50 | Saving checkpoints for 30 into ./output/ckpt\model.ckpt.
+2020-12-28 14:39:54 | loss = 97.16249, step = 31
+2020-12-28 14:39:54 | train_loss = 97.16249
+2020-12-28 14:39:54 | It seems that global step (tf.train.get_global_step) has not been increased. Current value (could be stable): 31 vs previous value: 31. You could increase the global step by passing tf.train.get_global_step() to Optimizer.apply_gradients or Optimizer.minimize.
+2020-12-28 14:39:55 | Saving checkpoints for 35 into ./output/ckpt\model.ckpt.
+2020-12-28 14:39:58 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2020-12-28 14:39:58 | Calling model_fn.
+2020-12-28 14:39:58 | *** Features ***
+2020-12-28 14:39:58 |   name = input_ids, shape = (?, 150)
+2020-12-28 14:39:58 |   name = input_mask, shape = (?, 150)
+2020-12-28 14:39:58 |   name = label_ids, shape = (?, 150)
+2020-12-28 14:39:58 |   name = segment_ids, shape = (?, 150)
+2020-12-28 14:40:30 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 14:40:30 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:606: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 14:40:34 | ***** Running training *****
+2020-12-28 14:40:34 |   Num examples = 47421
+2020-12-28 14:40:34 |   Batch size = 1
+2020-12-28 14:40:34 |   Num steps = 237105
+2020-12-28 14:40:35 | ***** Running evaluation *****
+2020-12-28 14:40:35 |   Num examples = 7866
+2020-12-28 14:40:35 |   Batch size = 1
+2020-12-28 14:40:35 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000271AE72B1D0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 14:40:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:353: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 14:40:35 | Not using Distribute Coordinator.
+2020-12-28 14:40:35 | Running training and evaluation locally (non-distributed).
+2020-12-28 14:40:35 | Start train and evaluate loop. The evaluate will happen after every checkpoint. Checkpoint frequency is determined based on RunConfig arguments: save_checkpoints_steps 5 or save_checkpoints_secs None.
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2020-12-28 14:40:35 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 14:40:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:388: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 14:40:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:368: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 14:40:35 | Calling model_fn.
+2020-12-28 14:40:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:433: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 14:40:35 | *** Features ***
+2020-12-28 14:40:35 |   name = input_ids, shape = (1, 150)
+2020-12-28 14:40:35 |   name = input_mask, shape = (1, 150)
+2020-12-28 14:40:35 |   name = label_ids, shape = (1, 150)
+2020-12-28 14:40:35 |   name = segment_ids, shape = (1, 150)
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 14:40:35 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 14:40:35 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 14:40:36 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:450: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 14:40:36 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:460: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 14:40:36 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+2020-12-28 14:40:36 | From D:\git_depository\Bert_Bilsmt_NER\optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+2020-12-28 14:40:36 | From D:/git_depository/Bert_Bilsmt_NER/train_bert_new.py:474: The name tf.train.LoggingTensorHook is deprecated. Please use tf.estimator.LoggingTensorHook instead.
+
+2020-12-28 14:40:36 | Done calling model_fn.
+2020-12-28 14:40:36 | Create CheckpointSaverHook.
+2020-12-28 14:40:37 | Graph was finalized.
+2020-12-28 14:40:37 | Restoring parameters from ./output/ckpt\model.ckpt-35
+2020-12-28 14:40:37 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+2020-12-28 14:40:38 | Running local_init_op.
+2020-12-28 14:40:38 | Done running local_init_op.
+2020-12-28 14:40:38 | Saving checkpoints for 35 into ./output/ckpt\model.ckpt.
+2020-12-28 14:40:42 | loss = 45.8228, step = 36
+2020-12-28 14:40:42 | train_loss = 45.8228
+2020-12-28 14:40:43 | Saving checkpoints for 40 into ./output/ckpt\model.ckpt.
+2020-12-28 14:40:46 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\training\saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2020-12-28 14:40:46 | Calling model_fn.
+2020-12-28 14:40:46 | *** Features ***
+2020-12-28 14:40:46 |   name = input_ids, shape = (?, 150)
+2020-12-28 14:40:46 |   name = input_mask, shape = (?, 150)
+2020-12-28 14:40:46 |   name = label_ids, shape = (?, 150)
+2020-12-28 14:40:46 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:28:18 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:28:18 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:28:18 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001F6EF5A9748>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:28:18 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:28:18 | ***** Running prediction*****
+2020-12-28 16:28:18 |   Num examples = 0
+2020-12-28 16:28:18 |   Batch size = 1
+2020-12-28 16:28:18 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:28:44 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:28:44 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:28:44 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000232B1E896D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:28:44 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:28:44 | ***** Running prediction*****
+2020-12-28 16:28:44 |   Num examples = 0
+2020-12-28 16:28:44 |   Batch size = 1
+2020-12-28 16:28:44 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:29:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:29:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:29:40 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000224A33396D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:29:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:29:40 | ***** Running prediction*****
+2020-12-28 16:29:40 |   Num examples = 0
+2020-12-28 16:29:40 |   Batch size = 1
+2020-12-28 16:29:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:30:12 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:30:12 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:30:12 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000013B06D796D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:30:13 | ***** Running prediction*****
+2020-12-28 16:30:13 |   Num examples = 0
+2020-12-28 16:30:13 |   Batch size = 1
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:30:13 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:386: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:30:13 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:30:13 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:366: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:30:13 | Calling model_fn.
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:431: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:30:13 | *** Features ***
+2020-12-28 16:30:13 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:30:13 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:30:13 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:30:13 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:30:13 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:30:13 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:30:13 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:30:13 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:30:13 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:30:13 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:30:13 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:30:13 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:448: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:30:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:458: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:30:13 | Done calling model_fn.
+2020-12-28 16:30:13 | Graph was finalized.
+2020-12-28 16:30:13 | Restoring parameters from ./output/ckpt\model.ckpt-40
+2020-12-28 16:30:14 | Running local_init_op.
+2020-12-28 16:30:14 | Done running local_init_op.
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:31:03 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002B72C9C96D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:31:03 | ***** Running prediction*****
+2020-12-28 16:31:03 |   Num examples = 0
+2020-12-28 16:31:03 |   Batch size = 1
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:31:03 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:386: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:31:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:31:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:366: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:31:03 | Calling model_fn.
+2020-12-28 16:31:03 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:431: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:31:03 | *** Features ***
+2020-12-28 16:31:03 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:31:03 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:31:03 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:31:03 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:31:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:31:03 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:31:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:31:03 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:31:04 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:448: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:31:04 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:458: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:31:04 | Done calling model_fn.
+2020-12-28 16:31:04 | Graph was finalized.
+2020-12-28 16:31:04 | Restoring parameters from ./output/ckpt\model.ckpt-40
+2020-12-28 16:31:04 | Running local_init_op.
+2020-12-28 16:31:04 | Done running local_init_op.
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:31:21 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001C336BE96D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:31:21 | ***** Running prediction*****
+2020-12-28 16:31:21 |   Num examples = 0
+2020-12-28 16:31:21 |   Batch size = 1
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:31:21 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:386: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:31:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:31:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:366: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:31:21 | Calling model_fn.
+2020-12-28 16:31:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:431: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:31:21 | *** Features ***
+2020-12-28 16:31:21 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:31:21 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:31:21 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:31:21 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:31:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:31:21 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:31:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:31:21 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:31:22 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:448: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:31:22 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:458: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:31:22 | Done calling model_fn.
+2020-12-28 16:31:22 | Graph was finalized.
+2020-12-28 16:31:22 | Restoring parameters from ./output/ckpt\model.ckpt-40
+2020-12-28 16:31:22 | Running local_init_op.
+2020-12-28 16:31:22 | Done running local_init_op.
+2020-12-28 16:32:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:32:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:32:40 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000278A49396D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:32:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:32:40 | ***** Running prediction*****
+2020-12-28 16:32:40 |   Num examples = 0
+2020-12-28 16:32:40 |   Batch size = 1
+2020-12-28 16:32:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:33:08 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:33:08 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:33:08 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001A8218596D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:33:08 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:33:08 | ***** Running prediction*****
+2020-12-28 16:33:08 |   Num examples = 0
+2020-12-28 16:33:08 |   Batch size = 1
+2020-12-28 16:33:08 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:33:26 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:33:26 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:568: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:33:26 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002552BE896D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:33:27 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:318: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:33:27 | ***** Running prediction*****
+2020-12-28 16:33:27 |   Num examples = 0
+2020-12-28 16:33:27 |   Batch size = 1
+2020-12-28 16:33:27 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:351: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:34:43 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:34:43 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:569: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:34:43 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001A83CCA96D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:34:43 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:319: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:34:43 | ***** Running prediction*****
+2020-12-28 16:34:43 |   Num examples = 0
+2020-12-28 16:34:43 |   Batch size = 1
+2020-12-28 16:34:43 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:352: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:37:19 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:37:19 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:569: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:37:19 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001B1FD5A96D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:37:20 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:319: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:37:20 | ***** Running prediction*****
+2020-12-28 16:37:20 |   Num examples = 0
+2020-12-28 16:37:20 |   Batch size = 1
+2020-12-28 16:37:20 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:352: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:37:35 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:37:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:569: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:37:35 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001FA33C796D8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:37:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:319: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:37:35 | ***** Running prediction*****
+2020-12-28 16:37:35 |   Num examples = 0
+2020-12-28 16:37:35 |   Batch size = 1
+2020-12-28 16:37:35 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:352: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:39:36 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:39:36 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:569: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:39:36 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001A8DE4C9668>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:39:36 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:319: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:39:36 | Writing example 0 of 4636
+2020-12-28 16:39:36 | *** Example ***
+2020-12-28 16:39:36 | guid: test-0
+2020-12-28 16:39:36 | tokens: 我 们 变 而 以 书 会 友 ， 以 书 结 缘 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂 。
+2020-12-28 16:39:36 | input_ids: 101 2769 812 1359 5445 809 741 833 1351 8024 809 741 5310 5357 8024 2828 3616 5401 510 3949 1378 3837 6121 4638 7608 1501 5102 1745 6480 510 4514 1085 510 2339 1072 741 3726 7415 671 1828 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | *** Example ***
+2020-12-28 16:39:36 | guid: test-1
+2020-12-28 16:39:36 | tokens: 为 了 跟 踪 国 际 最 新 食 品 工 艺 、 流 行 趋 势 ， 大 量 搜 集 海 外 专 业 书 刊 资 料 是 提 高 技 艺 的 捷 径 。
+2020-12-28 16:39:36 | input_ids: 101 711 749 6656 6679 1744 7354 3297 3173 7608 1501 2339 5686 510 3837 6121 6633 1232 8024 1920 7030 3017 7415 3862 1912 683 689 741 1149 6598 3160 3221 2990 7770 2825 5686 4638 2949 2520 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | *** Example ***
+2020-12-28 16:39:36 | guid: test-2
+2020-12-28 16:39:36 | tokens: 其 中 线 装 古 籍 逾 千 册 ； 民 国 出 版 物 几 百 种 ； 珍 本 四 册 、 稀 见 本 四 百 余 册 ， 出 版 时 间 跨 越 三 百 余 年 。
+2020-12-28 16:39:36 | input_ids: 101 1071 704 5296 6163 1367 5093 6874 1283 1085 8039 3696 1744 1139 4276 4289 1126 4636 4905 8039 4397 3315 1724 1085 510 4921 6224 3315 1724 4636 865 1085 8024 1139 4276 3198 7313 6659 6632 676 4636 865 2399 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | *** Example ***
+2020-12-28 16:39:36 | guid: test-3
+2020-12-28 16:39:36 | tokens: 有 的 古 木 交 柯 ， 春 机 荣 欣 ， 从 诗 人 句 中 得 之 ， 而 入 画 中 ， 观 之 令 人 心 驰 。
+2020-12-28 16:39:36 | input_ids: 101 3300 4638 1367 3312 769 3392 8024 3217 3322 5783 3615 8024 794 6408 782 1368 704 2533 722 8024 5445 1057 4514 704 8024 6225 722 808 782 2552 7720 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | *** Example ***
+2020-12-28 16:39:36 | guid: test-4
+2020-12-28 16:39:36 | tokens: 不 过 重 在 晋 趣 ， 略 增 明 人 气 息 ， 妙 在 集 古 有 道 、 不 露 痕 迹 罢 了 。
+2020-12-28 16:39:36 | input_ids: 101 679 6814 7028 1762 3232 6637 8024 4526 1872 3209 782 3698 2622 8024 1975 1762 7415 1367 3300 6887 510 679 7463 4575 6839 5387 749 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:36 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:39:39 | ***** Running prediction*****
+2020-12-28 16:39:39 |   Num examples = 4636
+2020-12-28 16:39:39 |   Batch size = 1
+2020-12-28 16:39:39 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:352: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:39:39 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:39:39 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:387: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:39:39 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:39:39 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:39:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:367: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:39:40 | Calling model_fn.
+2020-12-28 16:39:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:432: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:39:40 | *** Features ***
+2020-12-28 16:39:40 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:39:40 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:39:40 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:39:40 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:39:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:39:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:39:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:39:40 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:39:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:39:40 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:39:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:39:40 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:39:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:449: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:39:40 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:459: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:39:40 | Done calling model_fn.
+2020-12-28 16:39:40 | Graph was finalized.
+2020-12-28 16:39:40 | Restoring parameters from ./output/ckpt\model.ckpt-40
+2020-12-28 16:39:40 | Running local_init_op.
+2020-12-28 16:39:40 | Done running local_init_op.
+2020-12-28 16:40:13 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:40:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:567: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:40:13 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000023C6D109668>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:40:13 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:317: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:40:13 | Writing example 0 of 4636
+2020-12-28 16:40:13 | *** Example ***
+2020-12-28 16:40:13 | guid: test-0
+2020-12-28 16:40:13 | tokens: 我 们 变 而 以 书 会 友 ， 以 书 结 缘 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂 。
+2020-12-28 16:40:13 | input_ids: 101 2769 812 1359 5445 809 741 833 1351 8024 809 741 5310 5357 8024 2828 3616 5401 510 3949 1378 3837 6121 4638 7608 1501 5102 1745 6480 510 4514 1085 510 2339 1072 741 3726 7415 671 1828 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | *** Example ***
+2020-12-28 16:40:13 | guid: test-1
+2020-12-28 16:40:13 | tokens: 为 了 跟 踪 国 际 最 新 食 品 工 艺 、 流 行 趋 势 ， 大 量 搜 集 海 外 专 业 书 刊 资 料 是 提 高 技 艺 的 捷 径 。
+2020-12-28 16:40:13 | input_ids: 101 711 749 6656 6679 1744 7354 3297 3173 7608 1501 2339 5686 510 3837 6121 6633 1232 8024 1920 7030 3017 7415 3862 1912 683 689 741 1149 6598 3160 3221 2990 7770 2825 5686 4638 2949 2520 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | *** Example ***
+2020-12-28 16:40:13 | guid: test-2
+2020-12-28 16:40:13 | tokens: 其 中 线 装 古 籍 逾 千 册 ； 民 国 出 版 物 几 百 种 ； 珍 本 四 册 、 稀 见 本 四 百 余 册 ， 出 版 时 间 跨 越 三 百 余 年 。
+2020-12-28 16:40:13 | input_ids: 101 1071 704 5296 6163 1367 5093 6874 1283 1085 8039 3696 1744 1139 4276 4289 1126 4636 4905 8039 4397 3315 1724 1085 510 4921 6224 3315 1724 4636 865 1085 8024 1139 4276 3198 7313 6659 6632 676 4636 865 2399 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | *** Example ***
+2020-12-28 16:40:13 | guid: test-3
+2020-12-28 16:40:13 | tokens: 有 的 古 木 交 柯 ， 春 机 荣 欣 ， 从 诗 人 句 中 得 之 ， 而 入 画 中 ， 观 之 令 人 心 驰 。
+2020-12-28 16:40:13 | input_ids: 101 3300 4638 1367 3312 769 3392 8024 3217 3322 5783 3615 8024 794 6408 782 1368 704 2533 722 8024 5445 1057 4514 704 8024 6225 722 808 782 2552 7720 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | *** Example ***
+2020-12-28 16:40:13 | guid: test-4
+2020-12-28 16:40:13 | tokens: 不 过 重 在 晋 趣 ， 略 增 明 人 气 息 ， 妙 在 集 古 有 道 、 不 露 痕 迹 罢 了 。
+2020-12-28 16:40:13 | input_ids: 101 679 6814 7028 1762 3232 6637 8024 4526 1872 3209 782 3698 2622 8024 1975 1762 7415 1367 3300 6887 510 679 7463 4575 6839 5387 749 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:13 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:40:16 | ***** Running prediction*****
+2020-12-28 16:40:16 |   Num examples = 4636
+2020-12-28 16:40:16 |   Batch size = 1
+2020-12-28 16:40:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:350: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:40:16 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:40:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:385: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:40:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:40:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:40:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:365: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:40:16 | Calling model_fn.
+2020-12-28 16:40:16 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:430: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:40:16 | *** Features ***
+2020-12-28 16:40:16 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:40:16 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:40:16 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:40:16 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:40:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:40:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:40:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:40:16 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:40:16 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:40:16 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:40:17 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:40:17 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:40:17 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:447: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:40:17 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:457: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:40:17 | Done calling model_fn.
+2020-12-28 16:40:17 | Graph was finalized.
+2020-12-28 16:40:17 | Restoring parameters from ./output/ckpt\model.ckpt-40
+2020-12-28 16:40:17 | Running local_init_op.
+2020-12-28 16:40:17 | Done running local_init_op.
+2020-12-28 16:46:21 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:46:21 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:567: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:46:21 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002D4CB4396A0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:46:22 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:317: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:46:22 | Writing example 0 of 4636
+2020-12-28 16:46:22 | *** Example ***
+2020-12-28 16:46:22 | guid: test-0
+2020-12-28 16:46:22 | tokens: 我 们 变 而 以 书 会 友 ， 以 书 结 缘 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂 。
+2020-12-28 16:46:22 | input_ids: 101 2769 812 1359 5445 809 741 833 1351 8024 809 741 5310 5357 8024 2828 3616 5401 510 3949 1378 3837 6121 4638 7608 1501 5102 1745 6480 510 4514 1085 510 2339 1072 741 3726 7415 671 1828 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | *** Example ***
+2020-12-28 16:46:22 | guid: test-1
+2020-12-28 16:46:22 | tokens: 为 了 跟 踪 国 际 最 新 食 品 工 艺 、 流 行 趋 势 ， 大 量 搜 集 海 外 专 业 书 刊 资 料 是 提 高 技 艺 的 捷 径 。
+2020-12-28 16:46:22 | input_ids: 101 711 749 6656 6679 1744 7354 3297 3173 7608 1501 2339 5686 510 3837 6121 6633 1232 8024 1920 7030 3017 7415 3862 1912 683 689 741 1149 6598 3160 3221 2990 7770 2825 5686 4638 2949 2520 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | *** Example ***
+2020-12-28 16:46:22 | guid: test-2
+2020-12-28 16:46:22 | tokens: 其 中 线 装 古 籍 逾 千 册 ； 民 国 出 版 物 几 百 种 ； 珍 本 四 册 、 稀 见 本 四 百 余 册 ， 出 版 时 间 跨 越 三 百 余 年 。
+2020-12-28 16:46:22 | input_ids: 101 1071 704 5296 6163 1367 5093 6874 1283 1085 8039 3696 1744 1139 4276 4289 1126 4636 4905 8039 4397 3315 1724 1085 510 4921 6224 3315 1724 4636 865 1085 8024 1139 4276 3198 7313 6659 6632 676 4636 865 2399 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | *** Example ***
+2020-12-28 16:46:22 | guid: test-3
+2020-12-28 16:46:22 | tokens: 有 的 古 木 交 柯 ， 春 机 荣 欣 ， 从 诗 人 句 中 得 之 ， 而 入 画 中 ， 观 之 令 人 心 驰 。
+2020-12-28 16:46:22 | input_ids: 101 3300 4638 1367 3312 769 3392 8024 3217 3322 5783 3615 8024 794 6408 782 1368 704 2533 722 8024 5445 1057 4514 704 8024 6225 722 808 782 2552 7720 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | *** Example ***
+2020-12-28 16:46:22 | guid: test-4
+2020-12-28 16:46:22 | tokens: 不 过 重 在 晋 趣 ， 略 增 明 人 气 息 ， 妙 在 集 古 有 道 、 不 露 痕 迹 罢 了 。
+2020-12-28 16:46:22 | input_ids: 101 679 6814 7028 1762 3232 6637 8024 4526 1872 3209 782 3698 2622 8024 1975 1762 7415 1367 3300 6887 510 679 7463 4575 6839 5387 749 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:22 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:25 | ***** Running prediction*****
+2020-12-28 16:46:25 |   Num examples = 4636
+2020-12-28 16:46:25 |   Batch size = 1
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:350: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:46:25 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:385: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:46:25 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:46:25 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:365: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:46:25 | Calling model_fn.
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:430: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:46:25 | *** Features ***
+2020-12-28 16:46:25 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:46:25 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:46:25 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:46:25 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:46:25 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:46:25 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:46:25 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:46:25 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:46:25 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:46:25 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:46:25 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:46:25 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:447: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:46:25 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:457: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:46:25 | Done calling model_fn.
+2020-12-28 16:46:26 | Graph was finalized.
+2020-12-28 16:46:26 | Restoring parameters from .\output\ckpt\model.ckpt-30.meta
+2020-12-28 16:46:58 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+2020-12-28 16:46:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:567: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-12-28 16:46:58 | Using config: {'_model_dir': './output/ckpt', '_tf_random_seed': None, '_save_summary_steps': 5, '_save_checkpoints_steps': 5, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000001C3E8B396A0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2020-12-28 16:46:58 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:317: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2020-12-28 16:46:58 | Writing example 0 of 4636
+2020-12-28 16:46:58 | *** Example ***
+2020-12-28 16:46:58 | guid: test-0
+2020-12-28 16:46:58 | tokens: 我 们 变 而 以 书 会 友 ， 以 书 结 缘 ， 把 欧 美 、 港 台 流 行 的 食 品 类 图 谱 、 画 册 、 工 具 书 汇 集 一 堂 。
+2020-12-28 16:46:58 | input_ids: 101 2769 812 1359 5445 809 741 833 1351 8024 809 741 5310 5357 8024 2828 3616 5401 510 3949 1378 3837 6121 4638 7608 1501 5102 1745 6480 510 4514 1085 510 2339 1072 741 3726 7415 671 1828 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | *** Example ***
+2020-12-28 16:46:58 | guid: test-1
+2020-12-28 16:46:58 | tokens: 为 了 跟 踪 国 际 最 新 食 品 工 艺 、 流 行 趋 势 ， 大 量 搜 集 海 外 专 业 书 刊 资 料 是 提 高 技 艺 的 捷 径 。
+2020-12-28 16:46:58 | input_ids: 101 711 749 6656 6679 1744 7354 3297 3173 7608 1501 2339 5686 510 3837 6121 6633 1232 8024 1920 7030 3017 7415 3862 1912 683 689 741 1149 6598 3160 3221 2990 7770 2825 5686 4638 2949 2520 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | *** Example ***
+2020-12-28 16:46:58 | guid: test-2
+2020-12-28 16:46:58 | tokens: 其 中 线 装 古 籍 逾 千 册 ； 民 国 出 版 物 几 百 种 ； 珍 本 四 册 、 稀 见 本 四 百 余 册 ， 出 版 时 间 跨 越 三 百 余 年 。
+2020-12-28 16:46:58 | input_ids: 101 1071 704 5296 6163 1367 5093 6874 1283 1085 8039 3696 1744 1139 4276 4289 1126 4636 4905 8039 4397 3315 1724 1085 510 4921 6224 3315 1724 4636 865 1085 8024 1139 4276 3198 7313 6659 6632 676 4636 865 2399 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | *** Example ***
+2020-12-28 16:46:58 | guid: test-3
+2020-12-28 16:46:58 | tokens: 有 的 古 木 交 柯 ， 春 机 荣 欣 ， 从 诗 人 句 中 得 之 ， 而 入 画 中 ， 观 之 令 人 心 驰 。
+2020-12-28 16:46:58 | input_ids: 101 3300 4638 1367 3312 769 3392 8024 3217 3322 5783 3615 8024 794 6408 782 1368 704 2533 722 8024 5445 1057 4514 704 8024 6225 722 808 782 2552 7720 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | *** Example ***
+2020-12-28 16:46:58 | guid: test-4
+2020-12-28 16:46:58 | tokens: 不 过 重 在 晋 趣 ， 略 增 明 人 气 息 ， 妙 在 集 古 有 道 、 不 露 痕 迹 罢 了 。
+2020-12-28 16:46:58 | input_ids: 101 679 6814 7028 1762 3232 6637 8024 4526 1872 3209 782 3698 2622 8024 1975 1762 7415 1367 3300 6887 510 679 7463 4575 6839 5387 749 511 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:46:58 | label_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+2020-12-28 16:47:01 | ***** Running prediction*****
+2020-12-28 16:47:01 |   Num examples = 4636
+2020-12-28 16:47:01 |   Batch size = 1
+2020-12-28 16:47:01 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:350: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+2020-12-28 16:47:01 | 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-12-28 16:47:01 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:385: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+2020-12-28 16:47:01 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+2020-12-28 16:47:02 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+2020-12-28 16:47:02 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:365: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+2020-12-28 16:47:02 | Calling model_fn.
+2020-12-28 16:47:02 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:430: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+2020-12-28 16:47:02 | *** Features ***
+2020-12-28 16:47:02 |   name = input_ids, shape = (?, 150)
+2020-12-28 16:47:02 |   name = input_mask, shape = (?, 150)
+2020-12-28 16:47:02 |   name = label_ids, shape = (?, 150)
+2020-12-28 16:47:02 |   name = segment_ids, shape = (?, 150)
+2020-12-28 16:47:02 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:171: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2020-12-28 16:47:02 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2020-12-28 16:47:02 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+2020-12-28 16:47:02 | From D:\git_depository\Bert_Bilsmt_NER\modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+2020-12-28 16:47:02 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-12-28 16:47:02 | From D:\git_depository\Bert_Bilsmt_NER\lstm_crf_layer.py:149: The name tf.nn.xw_plus_b is deprecated. Please use tf.compat.v1.nn.xw_plus_b instead.
+
+2020-12-28 16:47:02 | From D:\python_project\venv\lib\site-packages\tensorflow_core\contrib\crf\python\ops\crf.py:213: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2020-12-28 16:47:02 | From D:\python_project\venv\lib\site-packages\tensorflow_core\python\ops\math_ops.py:2509: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-12-28 16:47:02 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:447: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2020-12-28 16:47:02 | From D:/git_depository/Bert_Bilsmt_NER/train_bert.py:457: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+2020-12-28 16:47:02 | Done calling model_fn.
+2020-12-28 16:47:02 | Graph was finalized.
+2020-12-28 16:47:02 | Restoring parameters from .\output\ckpt\model.ckpt-30
+2020-12-28 16:47:02 | Running local_init_op.
+2020-12-28 16:47:02 | Done running local_init_op.
